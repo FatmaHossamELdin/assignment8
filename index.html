@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border border-2">
+      <div class="container">
+        <div class="navbar-brand d-flex align-items-center gap-3">
+          <i
+            class="fa-solid fa-utensils shadow text-white bg-main py-3 px-4 border border-0 rounded-circle d-flex justify-content-center"
+          ></i>
+          <div class="header">
+            <h1 class="fw-bold fs-4 p-0 m-0">What's For Dinner</h1>
+            <span class="fs-6 text-secondary m-0 p-0"
+              >Your daily meal inspiration</span
+            >
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex  align-items-start">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-bookmark fs-5"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-clock-rotate-left fs-5"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-gear fs-5"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img
+                  src="images/avatar.jpg"
+                  class="bg-main border border-0 rounded-circle"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="meal-section">
+      <div class="container  bg-white border border-0 rounded-5 shadow">
+        <div class="row h-100">
+          <div class="col-xl-5 position-relative g-0">
+            <figure class="m-0 h-100">
+              <img
+                src="images/meal.jpg"
+                id="meal-img"
+                class="w-100 h-100 object-fit-cover d-block"
+                alt=""
+              />
+            </figure>
+            <div
+              class="position-absolute px-3 py-2 review d-flex align-items-center justify-content-start gap-2 bg-white border border-0 rounded-pill"
+            >
+              <i class="fa-solid fa-star text-warning"></i>
+              <span class="fw-bold" id="rating">4.7</span>
+              <span id="reviews">(412 reviews)</span>
+            </div>
+            <div
+              class="meal-details-section py-3 px-4 w-75 d-flex justify-content-around bg-white position-absolute gap-5 border border-0 rounded-4"
+            >
+              <div class="meal-details d-flex flex-column align-items-center">
+                <i class="fa-solid fa-clock text-warning"></i>
+                <span class="text-secondary">Prep Time</span>
+                <p class="fw-bold" id="prep-time">15 min</p>
+              </div>
+              <div class="meal-details d-flex flex-column align-items-center">
+                <i class="fa-solid fa-fire-burner text-danger"></i>
+                <span class="text-secondary">Cook Time</span>
+                <p class="fw-bold" id="cook-time">240 min</p>
+              </div>
+              <div class="meal-details d-flex flex-column align-items-center">
+                <i class="fa-solid fa-users text-info"></i>
+                <span class="text-secondary">Servings</span>
+                <p class="fw-bold" id="servings">4 people</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 p-5">
+            <div class="category d-flex justify-content-start gap-3 mb-2">
+              <span
+                id="level"
+                class="text-success bg-light-green py-1 px-2 fs-6 border border-0 rounded-pill"
+                >Easy</span
+              >
+              <span
+                id="category"
+                class="text-primary bg-light-blue py-1 px-2 fs-6 border border-0 rounded-pill"
+                >Asian</span
+              >
+            </div>
+            <div
+              class="heading d-flex align-items-baseline justify-content-between"
+            >
+              <h2 class="fw-bold fs-2" id="meal-name">Vegetable Curry</h2>
+              <div class="links d-flex justify-content-end gap-3">
+                <i
+                  class="fa-solid fa-bookmark bg-main-light d-flex justify-content-center px-4 txt-main py-3 border border-0 rounded-3"
+                ></i>
+                <i
+                  class="fa-solid fa-share-nodes bg-main-light d-flex justify-content-center px-4 txt-main py-3 border border-0 rounded-3"
+                ></i>
+              </div>
+            </div>
+            <p class="text-secondary" id="meal-desc">
+              Hearty vegetarian curry with coconut milk
+            </p>
+            <div
+              id="warning"
+             >
+              
+            </div>
+            <ul
+              class="nav nav-tabs navtabs justify-content-around"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link fs-6 fw-bold text-secondary border-0 m-0 py-3 active"
+                  id="ingredients-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#ingredients-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="ingredients-tab-pane"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-list-check"></i>
+                  <span>ingredients</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link fs-6 fw-bold text-secondary border-0 m-0 py-3"
+                  id="instructions-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#instructions-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="instructions-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>instructions</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link fs-6 fw-bold text-secondary border-0 m-0 py-3"
+                  id="nutrition-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nutrition-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="nutrition-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <span>nutrition</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link fs-6 fw-bold text-secondary border-0 m-0 py-3"
+                  id="cheftips-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cheftips-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="cheftips-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span>chef's tips</span>
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content mt-4 mb-2" id="myTabContent">
+              <div
+                class="tab-pane show bg-main-light p-4 border border-0 rounded-4 active"
+                id="ingredients-tab-pane"
+                role="tabpanel"
+                aria-labelledby="ingredients-tab"
+                tabindex="0"
+              >
+              <div id="ingredients"
+              ></div>
+                
+                
+              </div>
+              <div
+                class="tab-pane"
+                id="instructions-tab-pane"
+                role="tabpanel"
+                aria-labelledby="instructions-tab"
+                tabindex="1"
+              >
+               <div id="instructions"
+              ></div>
+              </div>
+
+              <div
+                class="tab-pane"
+                id="nutrition-tab-pane"
+                role="tabpanel"
+                aria-labelledby="nutrition-tab"
+                tabindex="2"
+              >
+                <div class="row">
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-fire"
+                        ></i>
+                        <span class="text-secondary fw-bold">Calories</span>
+                      </div>
+                      <p class="fw-bold fs-4" id="calories">380 kcal</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-dumbbell"
+                        ></i>
+                        <span class="text-secondary fw-bold">Protein</span>
+                      </div>
+                      <p class="fw-bold fs-4" id="protein">14g</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-wheat-awn"
+                        ></i>
+                        <span class="text-secondary fw-bold"
+                          >Carbohydrates</span
+                        >
+                      </div>
+                      <p class="fw-bold fs-4" id="cabrs">48g</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-droplet"
+                        ></i>
+                        <span class="text-secondary fw-bold">Fat</span>
+                      </div>
+                      <p class="fw-bold fs-4" id="fat">16g</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-seedling"
+                        ></i>
+                        <span class="text-secondary fw-bold">Fiber</span>
+                      </div>
+                      <p class="fw-bold fs-4" id="fiber">12g</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 g-3">
+                    <div
+                      class="p-3 border border-0 rounded-4 d-flex justify-content-between align-items-baseline bg-light"
+                    >
+                      <div
+                        class="nutr-type d-flex justify-content-start align-items-baseline gap-2"
+                      >
+                        <i
+                          class="fa-solid d-flex justify-content-center border border-0 rounded-4 py-3 px-4 bg-main-light txt-main fa-cube"
+                        ></i>
+                        <span class="text-secondary fw-bold">Sodium</span>
+                      </div>
+                      <p class="fw-bold fs-4" id="sodium">480mg</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane"
+                id="cheftips-tab-pane"
+                role="tabpanel"
+                aria-labelledby="cheftips-tab"
+                tabindex="3"
+              >
+                <div id="tips"
+              ></div>
+              </div>
+            </div>
+            <button onclick="displayRandomRecipe()"
+              class="py-3 px-4 fw-bold mt-3 bg-main-gradient border border-0 rounded-3"
+            >
+              <i class="fa-solid fa-rotate text-light me-3"></i>
+              <span class="fw-bold text-light fs-5">Try Another Recipe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
